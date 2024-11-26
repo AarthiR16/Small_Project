@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Digital Clock</title>
+        <link rel="stylesheet" href="clock.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.FEzfQN9f5-s8xHWB-LV3wQHaHa&pid=Api&P=0&h=180">
+    </head>
+    <body>
+        <div class="hero">
+            <h1>Digital Clock  <i class='bx bxs-bell-ring bx-tada' style='color:white' ></i></h1>
+            <div class="container">
+                <div class="clock">
+                    <span id="hrs">00</span>
+                    <span>:</span>
+                    <span id="min">00</span>
+                    <span>:</span>
+                    <span id="sec">00</span>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let hrs=document.getElementById("hrs");
+            let min=document.getElementById("min");
+            let sec=document.getElementById("sec");
+        
+            setInterval(()=>{
+                let currentTime=new Date();
+                hrs.innerHTML=(currentTime.getHours()<10?"0":"") + currentTime.getHours();
+                min.innerHTML=(currentTime.getMinutes()<10?"0":"") + currentTime.getMinutes();
+                sec.innerHTML=(currentTime.getSeconds()<10?"0":"") + currentTime.getSeconds();
+
+            },1000)
+
+            
+        </script>
+    </body>
+</html>
