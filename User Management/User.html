@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       User Mangement
+    </title>
+    <link rel="stylesheet" href="User.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="https://tse3.mm.bing.net/th?id=OIP.9S_lwnQSyuuceKYGctRN6QHaHa&pid=Api&P=0&h=180a">
+
+</head>
+
+<body>
+    <h2>USER MANAGEMENT  <i class='bx bx-user'></i></h2>
+
+    <center>
+       
+        <div class="box">
+            <span></span>
+        
+    <table class="table1">
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" class="form">
+                    <div>
+                        <label>Name <i class='bx bxs-user'></i> </label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName"  > 
+                    </div>
+                    <div>
+                        <label>Email Id <i class='bx bxs-envelope' ></i></label>
+                        <input type="text" name="EmailId" id="EmailId"  >
+                    </div>
+                    <div>
+                        <label>Salary <i class='bx bx-rupee' ></i></label>
+                        <input type="text" name="salary" id="salary" >
+                    </div>
+                    <div>
+                        <label>City <i class='bx bxs-buildings' ></i></label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input style="--clr:#1e9bff" type="submit" value="Save">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <h3 style="padding-left: 220px; font-size: 1.8rem;" >User Data  </h3>
+                        <tr>
+                            <th> Name</th>
+                            <th>Email  id</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="boredr-blur"></div>
+</center>
+    <script src="User.js"></script>
+</body>
+
+</html>
